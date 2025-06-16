@@ -1,12 +1,23 @@
 function calculateElectrons(input) {
-    if (!input) {
+  switch (true) {
+    case !input:
         return "fehlerhafte Eingabe";
-        
-    }else if(Array.isArray(input) && input.length === 0) {
+
+    case Array.isArray(input) && input.length === 0:
         return "leeres Array";
-    }
-    else if(input.length <= 3) {
+
+    case input.length <= 3:
         return "zu wenig Zahlen";
-    }
-	return 4;
+
+    default:
+        let sum = 0;
+        for (let i = 0; i < 4; i++){
+            const num = input[i];
+            
+            if (num % 2 === 1){
+                sum += (num - 1);
+            }
+        }
+        return sum;
+  }
 }
