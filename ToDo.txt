@@ -6,7 +6,7 @@
 
 "[2, 2, 3, 3]"			    --> 4
 
-"[3, 5, 3, 5, 4, 2]"		--> 12
+"[3, 5, 3, 5, 4, 3]"		--> 14 //To-Do geändert, da nur die ersten 4 Zahlen relevant waren
 
 "[3, 2, 5, 2, 1, 5, 2]"		--> zu viele Zahlen
 

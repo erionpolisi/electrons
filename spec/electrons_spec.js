@@ -19,4 +19,10 @@ describe("Electrons around the cores", function() {
   it("should return '4' for input '[2, 2, 3, 3]'", function() {
     expect(calculateElectrons([2, 2, 3, 3])).toBe(4);
   });
+
+  //[3, 5, 3, 5, 4, 3]
+  it("should return '14' for input '[3, 5, 3, 5, 4, 3]'", function() {
+    expect(calculateElectrons([3, 5, 3, 5, 4, 3])).toBe(14);
+  });
+
 });
