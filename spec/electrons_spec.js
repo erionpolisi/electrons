@@ -15,5 +15,8 @@ describe("Electrons around the cores", function() {
     expect(calculateElectrons([1, 2])).toBe("zu wenig Zahlen");
   });
 
-
+  //[2, 2, 3, 3]
+  it("should return '4' for input '[2, 2, 3, 3]'", function() {
+    expect(calculateElectrons([2, 2, 3, 3])).toBe(4);
+  });
 });
