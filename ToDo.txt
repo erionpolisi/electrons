@@ -1,0 +1,25 @@
+keine Eingabe			--> fehlerhafte Eingabe
+
+falsche eingabe 		--> fehlerhafte Eingabe
+
+[]				--> leere Eingabe
+
+[a]				--> zu wenig Zahlen
+
+[a, b]				--> zu wenig Zahlen
+
+[a, b, c]			--> zu wenig Zahlen
+
+a - h <= 6:
+
+[a, b, c, d]			--> Anzahl der Punkte ausgeben (Ungerade Zahlen)
+
+[a, b, c, d, e]			--> Anzahl der Punkte ausgeben (Ungerade Zahlen)
+
+[a, b, c, d, e, f]		--> Anzahl der Punkte ausgeben (Ungerade Zahlen)
+
+[a, b, c, d, e, f, g]		--> zu viele Zahlen
+
+[a, b, c, d, e, f, g, h]	--> zu viele Zahlen
+
+a - h > 6			--> zu große Zahlen
