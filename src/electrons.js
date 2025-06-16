@@ -9,18 +9,13 @@ function calculateElectrons(input) {
     case input.length <= 3:
         return "zu wenig Zahlen";
 
-    case input.length == 4:
-        let sum = 0;
-        for (let i = 0; i < 4; i++){
-            const num = input[i];
-            
-            if (num % 2 === 1){
-                sum += (num - 1);
-            }
-        }
-        return sum;
-
     default:
-        return 14;
+        let sum = 0;
+      for (const num of input) {
+        if (num % 2 === 1) {
+          sum += (num - 1);
+        }
+      }
+      return sum;
   }
 }
