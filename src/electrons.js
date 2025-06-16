@@ -1,3 +1,5 @@
-function calculateElectrons() {
-    return "fehlerhafte Eingabe";
+function calculateElectrons(input) {
+  if (!input) {
+  return "fehlerhafte Eingabe";
+}
 }
