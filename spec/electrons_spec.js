@@ -1,7 +1,7 @@
 describe("Electrons around the cores", function() {
   
-    //""
-    it("should return 'fehlerhafte Eingabe' for empty string input", function() {
+  //""
+  it("should return 'fehlerhafte Eingabe' for empty string input", function() {
     expect(calculateElectrons("")).toBe("fehlerhafte Eingabe");
   });
 
@@ -9,5 +9,11 @@ describe("Electrons around the cores", function() {
   it("should return 'leeres Array' for empty array input", function() {
     expect(calculateElectrons([])).toBe("leeres Array");
   });
+
+  //[1,2]
+  it("should return 'zu wenig Zahlen' for input with less than 4 numbers", function() {
+    expect(calculateElectrons([1, 2])).toBe("zu wenig Zahlen");
+  });
+
 
 });
