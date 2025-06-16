@@ -5,5 +5,7 @@ function calculateElectrons(input) {
     }else if(Array.isArray(input) && input.length === 0) {
         return "leeres Array";
     }
-    return "zu wenig Zahlen";
+    else if(input.length <= 3) {
+        return "zu wenig Zahlen";
+    }
 }
