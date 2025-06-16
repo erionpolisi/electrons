@@ -1,5 +1,13 @@
 describe("Electrons around the cores", function() {
-  it("should return 'fehlerhafte Eingabe' for empty string input", function() {
+  
+    //""
+    it("should return 'fehlerhafte Eingabe' for empty string input", function() {
     expect(calculateElectrons("")).toBe("fehlerhafte Eingabe");
   });
+
+  //[]
+  it("should return 'leeres Array' for empty array input", function() {
+    expect(calculateElectrons([])).toBe("leeres Array");
+  });
+
 });
