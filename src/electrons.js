@@ -8,4 +8,5 @@ function calculateElectrons(input) {
     else if(input.length <= 3) {
         return "zu wenig Zahlen";
     }
+	return 4;
 }
