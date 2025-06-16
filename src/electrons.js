@@ -8,7 +8,10 @@ function calculateElectrons(input) {
 
     case input.length <= 3:
         return "zu wenig Zahlen";
-
+		
+	case input.length >= 7:
+		return "zu viele Zahlen";
+		
     default:
         let sum = 0;
       for (const num of input) {
