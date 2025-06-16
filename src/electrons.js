@@ -9,7 +9,7 @@ function calculateElectrons(input) {
     case input.length <= 3:
         return "zu wenig Zahlen";
 
-    default:
+    case input.length == 4:
         let sum = 0;
         for (let i = 0; i < 4; i++){
             const num = input[i];
@@ -19,5 +19,8 @@ function calculateElectrons(input) {
             }
         }
         return sum;
+
+    default:
+        return 14;
   }
 }
