@@ -29,4 +29,9 @@ describe("Electrons around the cores", function() {
     it("should return 'zu viele Zahlen' for input '[3, 2, 5, 2, 1, 5, 2]' ", function() {
         expect(calculateElectrons([3, 2, 5, 2, 1, 5, 2])).toBe("zu viele Zahlen");
     });
+
+    //[3, 8, -2, 9, 10, 11]
+    it("should return 'ungültige Zahlen' for input '[3, 8, -2, 9, 10, 11]' ", function() {
+        expect(calculateElectrons([3, 8, -2, 9, 10, 11])).toBe("ungültige Zahlen");
+    });
 });
