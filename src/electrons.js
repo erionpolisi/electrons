@@ -14,13 +14,13 @@ function calculateElectrons(input) {
     case length >= 7:
       return "zu viele Zahlen";
 
+    case input.some(num => num > 6 || num < 0):
+      return "ungültige Zahlen";
+
     default:
       let sum = 0;
       for (const num of input) {
-        if(num > 6 || num < 0){
-            return "ungültige Zahlen";
-
-        }else if (num % 2 === 1) {
+        if (num % 2 === 1) {
           sum += (num - 1);
         }
       }
